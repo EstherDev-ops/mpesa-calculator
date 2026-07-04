@@ -7,9 +7,11 @@
  ## EXAMPLE:
    function App(){
        return(
-          <h1> React </h1>
+          <h4> React Learning </h4>
           );
   }
+
+  
 
   -props: Are data that are passed from parents components to children components so that the children can render or use the data.  Props cannot be modify and they are unidirectional.
   
