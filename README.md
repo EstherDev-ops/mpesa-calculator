@@ -1,10 +1,10 @@
-#React + TypeScript
+### React + TypeScript
 - React: Is a JS library, that I use to build user interfaces, it was invented in 2013, by FaceBook.
 
 - JSX: is a JS syntax extension, that enables me to describe how the UI will look like.
 
 - Components:  Is a reusable function in react that returns JSX.
- ##EXAMPLE:
+ ## EXAMPLE:
    function App(){
        return(
           <h1> React </h1>
