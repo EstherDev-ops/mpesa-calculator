@@ -10,7 +10,7 @@ function CalculatorFee() {
   const [transactionType, setTransactionType] =
     useState<TransactionType>("send");
 
-  const feeResult = amount > 0  ? calculateFee(amount, transactionType): null;
+  const feeResult = amount !== 0  ? calculateFee(amount, transactionType): null;
 
   return (
     <div>
@@ -41,7 +41,13 @@ function CalculatorFee() {
         </select>
       </label>
 
-    {feeResult !== null && <p>Estimated fee: {feeResult}</p>}
+    {feeResult !== null && (
+      typeof feeResult === "number" ? (
+        <p className="fee-success">Estimated fee: KES {feeResult}</p>
+      ): (
+        <p className="fee-error">{feeResult}</p>
+      )
+    )}
     </div>
   );
 }
